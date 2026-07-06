@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fraccione Receitas | Fracione receitas automaticamente</title>
+  <title>Fracione Receitas | Fracione receitas automaticamente</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
@@ -649,10 +649,53 @@
     .cta .btn { background: white; color: var(--orange-dark); box-shadow: none; }
 
     .footer {
-      padding: 28px 0;
+      padding: 64px 0 28px;
       background: #2f1b10;
       color: rgba(255,255,255,.78);
     }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 36px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand span:last-child {
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .footer p { max-width: 320px; font-size: .92rem; }
+
+    .footer-col h4 {
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      font-size: .95rem;
+      margin-bottom: 16px;
+      letter-spacing: -.01em;
+    }
+
+    .footer-col ul { list-style: none; display: grid; gap: 10px; }
+
+    .footer-col a {
+      font-size: .92rem;
+      opacity: .8;
+      transition: var(--transition);
+    }
+
+    .footer-col a:hover { opacity: 1; color: var(--honey); }
 
     .footer-content {
       display: flex;
@@ -660,9 +703,9 @@
       justify-content: space-between;
       gap: 20px;
       flex-wrap: wrap;
+      font-size: .86rem;
+      opacity: .7;
     }
-
-    .footer strong { color: white; font-family: 'Outfit', sans-serif; font-size: 1.1rem; }
 
     @media (max-width: 980px) {
       .menu { display: none; }
@@ -685,6 +728,7 @@
       .ingredients, .recipes-grid, .steps, .target-cards, .sidebar { grid-template-columns: 1fr; }
       .target-grid { padding: 24px; }
       .cta-box { padding: 42px 20px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
     }
   </style>
 </head>
@@ -693,7 +737,7 @@
     <div class="container nav">
       <a href="#" class="logo">
         <span class="logo-icon">🍲</span>
-        <span>Fraccione Receitas</span>
+        <span>Fracione Receitas</span>
       </a>
 
       <nav class="menu">
@@ -711,7 +755,6 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <div class="eyebrow">✨ Protótipo inicial para validação da ideia</div>
           <h1>Transforme qualquer receita em <span>qualquer quantidade.</span></h1>
           <p>
             Calcule automaticamente ingredientes para doces, salgados, massas e muito mais.
@@ -867,7 +910,7 @@
         <div>
           <h2>Ideal para quem cozinha em diferentes quantidades</h2>
           <p>
-            O Fraccione Receitas ajuda desde quem cozinha em casa até negócios que precisam
+            O Fracione Receitas ajuda desde quem cozinha em casa até negócios que precisam
             treinar funcionários, padronizar receitas e evitar desperdícios.
           </p>
         </div>
@@ -886,16 +929,44 @@
     <section class="cta">
       <div class="container cta-box">
         <h2>Pare de calcular receitas manualmente.</h2>
-        <p>Valide a ideia, teste a aceitação do público e evolua depois para área do usuário, fornecedores e cálculo de custos.</p>
+        <p>O Fracione Receitas existe para simplificar a sua cozinha: menos contas, menos desperdício e mais tempo para você cozinhar o que ama, em qualquer quantidade.</p>
         <a class="btn" href="#demo">Ver demonstração</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <strong>🍲 Fraccione Receitas</strong>
-      <span>Protótipo inicial para validação da ideia.</span>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <span>🍲</span>
+            <span>Fracione Receitas</span>
+          </div>
+          <p>O jeito mais simples de calcular receitas para qualquer quantidade, do fogão de casa à cozinha industrial.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#publico">Para quem é</a></li>
+            <li><a href="#demo">Demonstração</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@fracionereceitas.com">contato@fracionereceitas.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <span>© 2026 Fracione Receitas. Todos os direitos reservados.</span>
+      </div>
     </div>
   </footer>
 

@@ -1,10 +1,14 @@
 # Fracione Receitas
 
-Projeto para organização e desenvolvimento do Fracione Receitas.
+Sistema inteligente para fracionamento de receitas culinárias.
+
+## Sobre
+
+Projeto para organização e desenvolvimento do **Fracione Receitas**.
 
 ## Estrutura do projeto
 
-```
+```text
 fracione-receitas/
 ├── README.md
 ├── CHANGELOG.md
@@ -32,6 +36,6 @@ fracione-receitas/
     └── telas/
 ```
 
-## Sobre
+## Status
 
-Em construção.
+🚧 Em construção.
